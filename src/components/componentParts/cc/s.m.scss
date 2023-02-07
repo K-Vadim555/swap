@@ -1,0 +1,245 @@
+
+  
+.App {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    transform: translateY(25vh);
+}
+
+@mixin commoner($flex) {
+    flex: $flex;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+        rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    border-radius: 12px;
+    padding: 2em;
+    // height: 250px;
+}
+
+.Form {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+
+    h2 {
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb,
+            0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1),
+            0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+            0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    select {
+        height: auto;
+        width: 95%;
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 0.9em;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: #ffffff;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='grey' height='35' viewBox='0 0 24 24' width='35' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-repeat: no-repeat;
+        background-position-x: 98%;
+        background-position-y: 12px;
+        outline: none;
+        border: none;
+        box-sizing: border-box;
+     
+        border-radius: 8px;
+        transition: box-shadow 0.2s ease-out;
+        transition-property: box-shadow;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-out;
+        transition-delay: 0s;
+        display: block;
+        margin: 0.3em auto 2em;
+        text-transform: uppercase;
+    }
+   
+    input {
+        padding:10px ;
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 7px;
+        font-size: 18px;
+        text-align: center;
+        color: #b146ea;
+        outline: none;
+        border: none;
+        box-sizing: border-box;
+        border-bottom: 3px solid ;
+        border-image: linear-gradient(0.15turn, #6238B5,#FFFFFF,);
+        border-image-slice: 1;
+        border-radius: 8px;
+        transition: box-shadow 0.2s ease-out;
+        transition-property: box-shadow;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-out;
+        transition-delay: 0s;
+        
+
+      
+
+        &.dangerous {
+           
+            color: #ef233c;
+        }
+    }
+}
+
+.Qr {
+    display: flex;
+    width: 8vw;
+    height: 8vw;
+    margin: 0 auto;
+    
+   
+   
+    
+}
+ @media (max-width:1440px) {
+    .Form {
+ 
+        padding: 1vw 0;
+       
+        
+    
+       
+        select {
+            height: auto;
+            width: 95%;
+            padding-left: 1em;
+            padding-right: 1em;
+            font-size: 0.9em;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: #ffffff;
+            background-image: url("data:image/svg+xml;utf8,<svg fill='grey' height='35' viewBox='0 0 24 24' width='35' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+            background-repeat: no-repeat;
+            background-position-x: 98%;
+            background-position-y: 12px;
+            outline: none;
+            border: none;
+            box-sizing: border-box;
+         
+            border-radius: 8px;
+            transition: box-shadow 0.2s ease-out;
+            transition-property: box-shadow;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-out;
+            transition-delay: 0s;
+            display: block;
+            margin: 0.3em auto 2em;
+            text-transform: uppercase;
+        }
+       
+        input {
+            padding:1vw ;
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 7px;
+            font-size: 1.5vw;
+            text-align: center;
+            color: #b146ea;
+            outline: none;
+            border: none;
+            box-sizing: border-box;
+            border-bottom: .3vw solid ;
+            border-image: linear-gradient(0.15turn, #6238B5,#FFFFFF,);
+            border-image-slice: 1;
+            border-radius: 8px;
+            transition: box-shadow 0.2s ease-out;
+            transition-property: box-shadow;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-out;
+            transition-delay: 0s;
+            
+    
+          
+    
+            &.dangerous {
+               
+                color: #ef233c;
+            }
+        }
+    }
+ }
+ @media (max-width:480px) {
+    .Form {
+ 
+        padding: 3vw 0 !important;
+       
+        
+    
+       
+        select {
+            height: auto;
+            width: 95%;
+            padding-left: 1em;
+            padding-right: 1em;
+            font-size: 0.9em;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: #ffffff;
+            background-image: url("data:image/svg+xml;utf8,<svg fill='grey' height='35' viewBox='0 0 24 24' width='35' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+            background-repeat: no-repeat;
+            background-position-x: 98%;
+            background-position-y: 12px;
+            outline: none;
+            border: none;
+            box-sizing: border-box;
+         
+            border-radius: 8px;
+            transition: box-shadow 0.2s ease-out;
+            transition-property: box-shadow;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-out;
+            transition-delay: 0s;
+            display: block;
+            margin: 0.3em auto 2em;
+            text-transform: uppercase;
+        }
+       
+        input {
+            padding:2vw ;
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 7px;
+            font-size: 3vw;
+            text-align: center;
+            color: #b146ea;
+            outline: none;
+            border: none;
+            box-sizing: border-box;
+            border-bottom: .7vw solid ;
+            border-image: linear-gradient(0.15turn, #6238B5,#FFFFFF,);
+            border-image-slice: 1;
+            border-radius: 8px;
+            transition: box-shadow 0.2s ease-out;
+            transition-property: box-shadow;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-out;
+            transition-delay: 0s;
+            
+    
+          
+    
+            &.dangerous {
+               
+                color: #ef233c;
+            }
+        }
+    }
+ }
