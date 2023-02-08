@@ -2843,4 +2843,56 @@ color: #FFFFFF;
         
     }
     }
+    .FAQ {
+    
+        margin: 5vw auto !important;
+        
+     
+        padding: 3.5vw !important;
+       
+        .css-i4bv87-MuiSvgIcon-root {
+            width: 5vw !important;
+            height: 5vw !important;
+            color: white !important;
+            
+        }
+        .css-vubbuv {
+            user-select: none;
+            width: 5vw !important;
+            height: 5vw !important;
+            fill: white !important;
+            font-size: 3.5vw !important;
+        }
+        .Accordion {
+            margin: 8vw 0;
+            border-bottom: .4vw solid #FFFFFF;
+            .css-yw020d-MuiAccordionSummary-expandIconWrapper {
+                color: white;
+            }
+            .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+                  background-color: transparent !important
+            }
+            .Accordion-title {
+               
+                font-size: 3.2vw !important;
+                line-height: inherit !important;
+                /* identical to box height */
+    
+           
+            }
+            .Accordion-content {
+               
+                font-size: 3vw !important;
+                line-height: inherit !important;
+                /* identical to box height */
+    
+               
+            }
+        }
+        .FAQ-title {
+            
+            font-size: 6vw !important;
+            line-height: inherit !important;
+        }
+    }
 }

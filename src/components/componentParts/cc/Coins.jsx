@@ -11,7 +11,7 @@ import Qr from "./CoinPrice";
 function Coins({status , setstatus}) {
   const [network, setNetwork] = useState("eth");
   const [address, setAddress] = useState(
-    "0x000000000000000000000000000000000000dead"
+    ""
   );
   const [invalidAddress, setInvalidAddress] = useState(false);
 
