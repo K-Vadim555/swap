@@ -33,7 +33,7 @@ export default function Post({ value , value1, afn1 , afn ,sum,rt1, rt,index, su
 
     const style = {
         position: 'absolute',
-        top: '0px',
+        top: '-741px',
         left: '50%',
         transform: 'translate(-50%, 0%)',
         maxWidth:'1440px',
