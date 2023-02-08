@@ -33,7 +33,7 @@ export default function Post({ value , value1, afn1 , afn ,sum,rt1, rt,index, su
 
     const style = {
         position: 'absolute',
-        top: '-741px',
+        top: '0px',
         left: '50%',
         transform: 'translate(-50%, 0%)',
         maxWidth:'1440px',
@@ -104,7 +104,7 @@ export default function Post({ value , value1, afn1 , afn ,sum,rt1, rt,index, su
           
        
           <p className='postlist-post-title'>Your order <span className='postlist-post-title-span'>#{post.id}</span> is {wait}</p>
-                <Divider color='white'/> 
+                <Divider width='auto' color='white'/> 
                 <p className='seconds1' style={{color:'black'}}>{'a'+ min1+'m'+ 'and'+ seconds1 +'seconds ago '}</p>
               
           <div className='pp' > 

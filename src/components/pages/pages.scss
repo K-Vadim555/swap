@@ -1263,7 +1263,7 @@ color: #FFFFFF;
 }
 @media (max-width :1440px) {
     .bgggg {
-        top: -55vw !important;
+        top: 0vw !important;
     }
     a , p , button {
         text-decoration: none;
@@ -2290,6 +2290,80 @@ color: #FFFFFF;
         }
     
     }
+    .postlist {
+        width: 80% !important;
+        min-height: 40vw;
+        
+       .postlist-post-title {
+        
+        margin: 2vw auto !important;
+        font-weight: 900;
+        font-size: 1.7vw !important;
+        line-height: inherit !important;
+      
+       }
+       .postlist-post-title-span {
+         
+       }
+       .pp {
+        display: none;
+       }
+        .order-open {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+    
+    
+        }
+        span {
+            color: #B146EA;
+        }
+        .title {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 6vw !important;
+            line-height: inherit !important;
+            /* identical to box height */
+    
+    
+            color: #FFFFFF;
+    
+        }
+        .title2 {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2.5vw !important;
+            line-height: inherit !important;
+            /* identical to box height */
+            margin-bottom: 6vw;
+            text-align: center;
+    
+            color: #D8D7D7;
+    
+        }
+        .post {
+            padding: 2vw !important;
+            border-radius: 2vw !important;
+            
+  
+            .postlist-post-title {
+                display: flex !important;
+                margin: 1vw 4vw !important;
+               }
+               
+            .btn {
+                font-size: 1.3vw !important;
+                width: 10vw !important;
+                height: 3vw !important;
+                line-height: inherit !important;
+                margin: 1.5vw auto !important;
+                margin-bottom: 0 !important;
+            }
+        }
+    }
 }
 @media (max-width :480px) { 
     .bgg {
@@ -3109,5 +3183,64 @@ color: #FFFFFF;
             }
         }
     
+    }
+    .postlist {
+        width: 80% !important;
+        min-height: 110vw;
+        
+       .postlist-post-title {
+        
+        margin: 3vw auto !important;
+    
+        font-size: 4vw !important;
+      
+      
+       }
+      
+      
+        .title {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 8vw !important;
+            line-height: inherit !important;
+            /* identical to box height */
+    
+    
+            color: #FFFFFF;
+    
+        }
+        .title2 {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 4vw !important;
+            line-height: inherit !important;
+            /* identical to box height */
+            margin-bottom: 6vw;
+            text-align: center;
+    
+            color: #D8D7D7;
+    
+        }
+        .post {
+            padding: 3vw !important;
+            border-radius: 2vw !important;
+            
+  
+            .postlist-post-title {
+                display: flex !important;
+                margin: 1vw 4vw !important;
+               }
+             
+            .btn {
+                font-size: 4vw !important;
+                width: 25vw !important;
+                height: 10vw !important;
+                line-height: inherit !important;
+                margin: 1.5vw auto !important;
+                margin-bottom: 0 !important;
+            }
+        }
     }
 }
