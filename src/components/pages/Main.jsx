@@ -517,6 +517,7 @@ const Main = ({  afn,afn1 ,rt   ,rt1  ,text1, text2,  setafn , setafn1 ,setrt   
                               }}
                             >
                             <div className="search-container">
+                            <div className="search-bg">
                           <div className="search-inner">
                             <input type="text" value={value1} onChange={(event) => {  setValue1(event.target.value);}} />
                            
