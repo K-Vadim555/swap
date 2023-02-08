@@ -2416,10 +2416,10 @@ color: #FFFFFF;
         .logo-group {
            
             .img1 {
-                width: 7vw;
+                width: 8vw;
             }
             .img2 {
-                width: 25vw;
+                width: 30vw;
                 margin: 0 1vw;
             }
         }
@@ -2433,9 +2433,9 @@ color: #FFFFFF;
             backdrop-filter: blur(4.5px);
             /* Note: backdrop-filter has minimal browser support */
     
-            border-radius: 3vw;
+            border-radius: 5vw;
             margin: 0 auto;
-            padding: 3vw;
+            padding: 5vw !important;
             width: 90% !important;
            
             gap: 1vw;
@@ -2983,7 +2983,7 @@ color: #FFFFFF;
     
         margin: 5vw auto !important;
         
-     
+        border-radius: 5vw !important;
         padding: 3.5vw !important;
        
         .css-i4bv87-MuiSvgIcon-root {
@@ -3033,10 +3033,11 @@ color: #FFFFFF;
     }
     .about-us {
        
-       
+        border-radius: 5vw !important;
         margin: 5vw auto !important;
         padding: 6vw !important;
         padding-top: 2vw !important;
+        
         .curr-table {
             margin: 5vw auto !important;
             padding: 0 !important;
@@ -3072,7 +3073,7 @@ color: #FFFFFF;
         padding-bottom: 5vw;
     
     
-        border-radius: 2vw !important;
+        border-radius: 5vw !important;
         .Support-title {
           
             font-size: 8vw !important;
@@ -3083,7 +3084,7 @@ color: #FFFFFF;
         }
         .Support-title2 {
             margin: 5vw auto;
-            font-size: 2.5vw !important;
+            font-size: 5vw !important;
             line-height: inherit !important;
             font-weight: 700 !important;
         }
