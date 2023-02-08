@@ -3056,6 +3056,67 @@ color: #FFFFFF;
         
     }
     }
+    .modal {
+        z-index: 5;
+        .in-to {
+            display: block;
+            width: 100%;
+            justify-content: space-between;
+            padding:.5vw 3vw;
+            .in , .to {
+                padding: 3vw;
+                width: 43%;
+                margin: 3vw auto !important;
+                border-radius: 5vw;
+                .ex {
+                   
+                    font-weight: 900;
+                    font-size: 3vw !important;
+                   
+                    margin-top: 5vw !important;
+                }
+                .adress-p {
+                    font-size: 3vw !important;
+                    margin: 3vw 0;
+                }
+               
+                .copy-btn {
+                   
+                    font-size: 3vw !important;
+                   
+                    margin: 2vwvw 0;
+    
+                    img {
+                        width: 8vw !important;
+                        height: 8vw !important;
+                        margin: 0 1vw;
+                    }
+                }
+                .copy-btn1 {
+                    margin-bottom: 4vw;
+                }
+                .title {
+                    font-size: 3.5vw !important;
+                    padding: 2vw !important;
+                }
+            }
+        }
+        .maodal-time{
+            font-size: 15vw !important;
+        }
+        .modal-title2{
+            font-size: 4vw !important;
+            margin: 3vw auto;
+            color: #D8D7D7;
+        }
+        .Myorders {
+         
+            text-transform: none !important;
+        }
+        .logotext {
+            font-size: 8vw !important;
+        }
+    }
     .FAQ {
     
         margin: 5vw auto !important;

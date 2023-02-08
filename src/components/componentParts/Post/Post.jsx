@@ -17,6 +17,7 @@ import Footer from '../../pages/Footer';
 import copy from '../../../img/Group 603.svg'
 import { ButtonBase, Divider } from '@mui/material';
 import Qr from '../cc/CoinPrice';
+import SwipeableTemporaryDrawer from '../CC2';
 
 export default function Post({ value , value1, afn1 , afn ,sum,rt1, rt,index, sum1, posts,  setPosts, post ,count  }) {
 
@@ -169,6 +170,7 @@ export default function Post({ value , value1, afn1 , afn ,sum,rt1, rt,index, su
                         <p >My Orders</p>
                         
                     </Button>
+                    <SwipeableTemporaryDrawer/>
                 </div>
               <p className="logotext">Your order <span>#{post.id}</span></p>
               <p className='modal-title2'>Please complete the order within the time indicated below, otherwise it will be cancelled.</p>
