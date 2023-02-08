@@ -708,7 +708,7 @@ const Main = ({  afn,afn1 ,rt   ,rt1  ,text1, text2,  setafn , setafn1 ,setrt   
           <p>XRP</p>
           </div>
      
-    {posts.map((post , index) => {
+    {/* {posts.map((post , index) => {
       return (
         <Post 
           value={value}
@@ -722,7 +722,7 @@ const Main = ({  afn,afn1 ,rt   ,rt1  ,text1, text2,  setafn , setafn1 ,setrt   
           post={post} 
         />
       )
-    })}
+    })} */}
   </div>
          </div>
      {/**

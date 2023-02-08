@@ -930,12 +930,27 @@ color: #FFFFFF;
 
    
     display: flex;
+    align-items: center;
    
     
     background: #231E2A ;
     padding:10px ;
     p {
-        margin-right:40px ;
+       
+        color: white;
+
+    }
+    .p1 {
+        margin-right: 65px;
+        width: 20px;
+    }
+    .p2 {
+        text-align: end;
+        width: 80px;
+    }
+    .p3 {
+        display: flex;
+        margin-left: auto;
     }
     img {
         width: 25px;
@@ -1992,8 +2007,19 @@ color: #FFFFFF;
         background: #231E2A ;
         padding:1vw ;
         p {
-            margin-right:2vw ;
+       
+            margin-right: 2vw;
+    
         }
+        .p1 {
+            margin-right: 5vw;
+            width: 2vw;
+        }
+        .p2 {
+            text-align: end;
+            width: 7vw;
+        }
+       
         img {
             width: 2vw;
             height: 2vw;
@@ -2186,6 +2212,40 @@ color: #FFFFFF;
             font-size: 4vw !important;
             line-height: inherit !important;
         }
+    }
+    .about-us {
+        
+        border-radius: 2vw !important;
+ 
+        margin: 2vw auto !important;
+        padding: 3vw !important;
+        padding-top: 1vw !important;
+        .curr-table {
+            margin: 0 auto;
+        }
+        .about-us-info {
+    
+       
+        p {
+            font-size: 1.5vw !important;
+            line-height: 199.8%;
+        }
+        .p {
+            margin-top: 2vw !important;
+            font-size: 2.5vw !important;
+            line-height: inherit !important;
+            }
+        }
+         .logotext {
+                font-size: 6vw !important;
+                line-height: inherit !important;
+              
+                span {
+                    font-size: 6vw  !important;
+                  
+    
+                }
+            }
     }
 }
 @media (max-width :480px) { 
@@ -2762,6 +2822,15 @@ color: #FFFFFF;
             align-items: center;
             font-size: 4vw !important;
         }
+        .p1 {
+            margin-right: 15vw;
+            width: 5vw;
+        }
+        .p2 {
+            text-align: end !important;
+            justify-content: center;
+            width: 20vw;
+        }
         img {
             width: 5vw;
             height: 5vw;
@@ -2894,5 +2963,39 @@ color: #FFFFFF;
             font-size: 6vw !important;
             line-height: inherit !important;
         }
+    }
+    .about-us {
+       
+       
+        margin: 5vw auto !important;
+        padding: 6vw !important;
+        padding-top: 2vw !important;
+        .curr-table {
+            margin: 5vw auto !important;
+            padding: 0 !important;
+            .p1 {
+                margin-right: 10vw !important;
+            }
+        }
+        .about-us-info {
+    
+       
+        p {
+           
+            font-size: 4vw !important;
+        }
+        .p {
+            margin-top: 5vw !important;
+            font-size: 5vw !important;
+            }
+        }
+         .logotext {
+                font-size: 7vw !important;
+                span {
+                    font-size: 7vw !important;
+                  
+    
+                }
+            }
     }
 }

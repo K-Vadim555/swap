@@ -45,9 +45,9 @@ export default function CurrTable() {
        
          <div  className='curr-table-sec' >
            <img  src={`https://www.cryptocompare.com/${item.CoinInfo.ImageUrl}`}></img>
-          <p style={{width:'10px',color:'white',textAlign:'start'}}>{item.CoinInfo.Name}</p>
-          <p style={{width:'90px',color:'white',textAlign:'end', justifyContent:'end', display:'flex', margin:'auto'}}>{item.DISPLAY.USD.PRICE}</p>
-          <p style={{color:'white',textAlign:'start', display:'flex', marginLeft:'auto'}}>{item.DISPLAY.USD.MKTCAP}</p>
+          <p className='p1'>{item.CoinInfo.Name}</p>
+          <p className='p2'>{item.DISPLAY.USD.PRICE}</p>
+          <p className='p3'>{item.DISPLAY.USD.MKTCAP}</p>
          {/*  <p style={{color:'white',textAlign:'start'}}>{item.RAW.USD.PRICE + item.RAW.USD.PRICE/100*5}</p> */}
        
           </div>   <Divider style={{height:'1.5px'}} color='white' />
