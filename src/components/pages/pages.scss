@@ -137,7 +137,9 @@
 }.rg {
     position: absolute;
     top:0;
-    left: 30px;
+    left: 0;
+    display: flex;
+    align-items: center;
     z-index: -1;
      width: 100%;
      color: white;
@@ -153,10 +155,11 @@
 .rg2 {
     z-index: -2;
     width: 20px !important;
+    margin-right: 5px !important;
 }
 }
 .css-3bmhjh-MuiPaper-root-MuiPopover-paper {
-    background-color: transparent !important;}
+    background-color: #B146EA !important;}
 .value-button {
     background-color: transparent !important;
     font-size: 22px !important;
@@ -1370,7 +1373,7 @@ color: #FFFFFF;
     }.rg {
         position: absolute;
      
-        left: 3vw;
+        left: 0;
         z-index: -1;
          width: 100%;
          color: white;
@@ -1383,7 +1386,7 @@ color: #FFFFFF;
         z-index: 1;
         color: transparent;
         width: 100%;
-       
+        margin-right: .5vw;
     }
     .rg2 {
         z-index: -2;
@@ -2776,6 +2779,66 @@ color: #FFFFFF;
     
     color: #FFFFFF;
     
+    }
+    }
+    .search-container {
+        padding: 1vw;
+        
+         .search-inner {
+           
+            input {
+                
+                border-bottom: .2vw solid #FFFFFF;
+                padding: .5vw;
+                width: 100%;
+                font-size: 4.5vw !important;
+            }
+            img {
+               
+                width: 5vw !important;
+                height: 5vw !important;
+                top: 50%;
+                right: 0;
+                transform: translate(-50%, -50%),
+            }
+            input::placeholder {   
+                font-size: 3.5vw !important;
+            }
+         }
+       
+        .dropdown-row {
+        display: flex;
+        align-items: center;
+        position: relative;
+        top:0;
+        left: 0;
+        padding: .5vw;
+        cursor: pointer;
+    }.rg {
+        position: absolute;
+     
+        left: 0;
+        z-index: -1;
+         width: 100%;
+         color: white;
+         top: 50%;
+         font-size: 4vw !important;
+         transform: translate(0%, -50%),
+       
+    
+    }.rg1 {
+        z-index: 1;
+        color: transparent;
+        width: 100%;
+        margin-right: .5vw;
+        font-size: 4vw !important;
+    }
+    .rg2 {
+        z-index: -2;
+        width: 8vw !important;
+        height: 8vw !important;
+        margin-right: 2vw !important;
+        
     }
     }
 }

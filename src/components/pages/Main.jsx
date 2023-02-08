@@ -425,8 +425,8 @@ const Main = ({  afn,afn1 ,rt   ,rt1  ,text1, text2,  setafn , setafn1 ,setrt   
                               className="dropdown-row"
                               value={rt} 
                               key={item.CoinInfo.Name}
-                            >    <img className='rg2' style={{width:'20px',height:'20px'}}  src={`https://www.cryptocompare.com/${item.RAW.USD.IMAGEURL}`}/>
-                                            <p className='rg' >{item.CoinInfo.Name || 'none'}</p>
+                            >    
+                                            <p className='rg' ><img className='rg2' style={{width:'20px',height:'20px'}}  src={`https://www.cryptocompare.com/${item.RAW.USD.IMAGEURL}`}/>{item.CoinInfo.Name || 'none'}</p>
                                 <p className='rg1' >{item.RAW.USD.PRICE  || 'none'}</p>
                               
                             </div>
@@ -534,7 +534,7 @@ const Main = ({  afn,afn1 ,rt   ,rt1  ,text1, text2,  setafn , setafn1 ,setrt   
                                   fullName !== searchTerm
                                 );
                               })
-                              .slice(0, 3)
+                              .slice(0, 10)
                               .map((item) => (
                                 <div
                                   onClick={(e) => {onSearch2(item.CoinInfo.Name) 
@@ -544,8 +544,9 @@ const Main = ({  afn,afn1 ,rt   ,rt1  ,text1, text2,  setafn , setafn1 ,setrt   
                                   className="dropdown-row"
                                   value={rt1} 
                                   key={item.CoinInfo.Name}
-                                >    <img className='rg2' style={{width:'20px',height:'20px'}}  src={`https://www.cryptocompare.com/${item.RAW.USD.IMAGEURL}`}/>
-                                                <p className='rg' >{item.CoinInfo.Name || 'none'}</p>
+                                > 
+                                  
+                                                <p className='rg' > <img className='rg2' style={{width:'20px',height:'20px'}}  src={`https://www.cryptocompare.com/${item.RAW.USD.IMAGEURL}`}/>{item.CoinInfo.Name || 'none'}</p>
                                     <p className='rg1' >{item.RAW.USD.PRICE  || 'none'}</p>
                                   
                                 </div>
