@@ -2278,9 +2278,12 @@ color: #FFFFFF;
             width: 100% !important;
            }
            a {
-            font-size: 18px !important;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 24px !important;
             color: white;
-            margin: 10px auto;
+            margin: 20px auto;
             text-transform: uppercase;
            }
         }
@@ -2289,9 +2292,9 @@ color: #FFFFFF;
             justify-content:space-between;
             align-items: center;
             width: fit-content !important;
-            padding: 10px;
+            padding: 15px;
     
-            border-radius: 20px;
+           
             outline: none;
             background: linear-gradient(180deg,#343096 0%, #A745E4 100% );
             border-radius: 60px;
@@ -2309,8 +2312,13 @@ color: #FFFFFF;
         letter-spacing: 0.03em;
     
         color: #FFFFFF;
+            img {
+                width: 35px;
+                height: 35px;
+            }
             p {
-                font-size: 18px !important;
+                font-size: 24px !important;
+                margin-left: 5px;
             }
         }
     } 
@@ -2830,6 +2838,7 @@ color: #FFFFFF;
             text-align: end !important;
             justify-content: center;
             width: 20vw;
+            font-size: 3.7vw !important;
         }
         img {
             width: 5vw;
