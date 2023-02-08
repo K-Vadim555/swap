@@ -58,7 +58,7 @@ export default function Post({ value , value1, afn1 , afn ,sum,rt1, rt,index, su
   const [ timerActive, setTimerActive ] = React.useState(true);
 
   useEffect(() => {
-    setTimeout(setSeconds1, 1000, seconds1 + 1);
+    /* setTimeout(setSeconds1, 1000, seconds1 + 1);
     if ( seconds1 == 60) {
         setmin1(min1 + 1)
         setSeconds1(0)
@@ -66,15 +66,10 @@ export default function Post({ value , value1, afn1 , afn ,sum,rt1, rt,index, su
         
     if ( open == true && seconds > 0 && min > 0 ) {
         setTimeout(setSeconds, 1000, seconds - 1);
-        
     } 
-   if ( seconds == 0 && min > 0) {
-       setmin(min - 1)
-       setSeconds(60)
-   }
    if ( seconds > 0 && min == 0) {
     setTimeout(setSeconds, 1000, seconds - 1);
-}
+} */
     if ( seconds == 0 && min == 0) {
     setmin(0 +"0")
     setSeconds(0 +"0")
@@ -83,9 +78,37 @@ export default function Post({ value , value1, afn1 , afn ,sum,rt1, rt,index, su
  if ( min == 0 +"0" && seconds == 0 +"0") {
     setOpen(false)
     setwait('falled')
-} 
-  
+}  
+ 
   }, [seconds , open , seconds1 ]);
+  /* useEffect(() => {
+    if ( seconds == 0 && min > 0) {
+        setmin(min - 1)
+        setSeconds(60)
+    }
+    
+
+  }, []); */
+  useEffect(() => {
+    if ( seconds !== 0 && min > 0) {
+        setTimeout(setSeconds, 100, seconds - 1)
+    }
+  }, [seconds ]);
+  useEffect(() => {
+    if ( seconds == 0 && min > 0) {
+        setTimeout(setmin, 100, min - 1)
+        setSeconds(59)
+    }
+  }, [ seconds]);
+  useEffect(() => {
+    if ( seconds > 0 && min == 0) {
+        setTimeout(setSeconds, 100, seconds - 1)
+    }
+  }, [seconds ]);
+  
+  
+
+  
  /*  React.useEffect(() => {
     if (seconds > 0 && timerActive) {
       setTimeout(setSeconds, 100, seconds - 1);
