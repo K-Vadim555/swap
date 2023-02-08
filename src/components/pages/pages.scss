@@ -571,7 +571,7 @@ color: #FFFFFF;
             color: #FFFFFF;
         }
         .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
-            border-color: transparent !important;
+            border-color: #B146EA !important;
         }
         .sec {
             display: block;
@@ -1549,7 +1549,7 @@ color: #FFFFFF;
                 color: #FFFFFF;
             }
             .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
-                border-color: transparent !important;
+                border-color: #B146EA !important;
             }
             .sec {
                 display: block;
@@ -2344,7 +2344,7 @@ color: #FFFFFF;
                 font-size: 5vw !important;
             }
             .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
-                border-color: transparent !important;
+                border-color: #B146EA !important;
             }
             .sec {
                 display: block;
@@ -2782,14 +2782,14 @@ color: #FFFFFF;
     }
     }
     .search-container {
-        padding: 1vw;
+        padding: 3vw;
         
          .search-inner {
            
             input {
                 
-                border-bottom: .2vw solid #FFFFFF;
-                padding: .5vw;
+                border-bottom: .4vw solid #FFFFFF;
+                padding: 1.5vw !important;
                 width: 100%;
                 font-size: 4.5vw !important;
             }
@@ -2812,7 +2812,7 @@ color: #FFFFFF;
         position: relative;
         top:0;
         left: 0;
-        padding: .5vw;
+        padding: 2vw !important;
         cursor: pointer;
     }.rg {
         position: absolute;
