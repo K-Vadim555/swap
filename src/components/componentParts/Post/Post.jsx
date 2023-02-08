@@ -73,7 +73,7 @@ export default function Post({ value , value1, afn1 , afn ,sum,rt1, rt,index, su
        setSeconds(60)
    }
    if ( seconds > 0 && min == 0) {
-    setTimeout(setSeconds, 100, seconds - 1);
+    setTimeout(setSeconds, 1000, seconds - 1);
 }
     if ( seconds == 0 && min == 0) {
     setmin(0 +"0")
