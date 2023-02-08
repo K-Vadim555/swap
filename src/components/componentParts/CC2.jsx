@@ -38,12 +38,12 @@ export default function SwipeableTemporaryDrawer() {
   const list = (anchor) => (
     <Box
       className='mob-r'
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 'auto' }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-           
+           <button onClick={toggleDrawer(anchor, false)} className='close-burger'>+</button>
          <ul className="link-group">
          <li><Link to='/'>Home</Link></li>
             <li><Link to='/aboutUs'>About</Link></li>
@@ -55,6 +55,7 @@ export default function SwipeableTemporaryDrawer() {
             <p >My Orders</p>
             
          </Link>
+        
     </Box>
   );
 
