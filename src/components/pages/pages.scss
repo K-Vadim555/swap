@@ -2247,6 +2247,49 @@ color: #FFFFFF;
                 }
             }
     }
+    .Support {
+       
+        padding: 3vw 0 ;
+        margin-top: 2vw !important;
+        padding-bottom: 5vw;
+    
+    
+        border-radius: 2vw !important;
+        .Support-title {
+          
+            font-size: 6vw !important;
+            line-height: inherit !important;
+          
+            margin: 2vw auto !important;
+            color: #FFFFFF;
+        }
+        .Support-title2 {
+            margin: 3vw auto;
+            font-size: 2.5vw !important;
+            line-height: inherit !important;
+            font-weight: 700 !important;
+        }
+        .Support-links {
+            margin: 2vw auto !important;
+        }
+        .Support-link {
+            margin: 0 6vw !important;
+            img {
+                width: 15vw !important;
+                height: 15vw !important;
+                
+            
+            }
+            p {
+               
+                font-size: 2.5vw !important;
+                line-height: inherit !important;
+              
+                margin: 1vw auto;
+            }
+        }
+    
+    }
 }
 @media (max-width :480px) { 
     .bgg {
@@ -3021,5 +3064,49 @@ color: #FFFFFF;
     
                 }
             }
+    }
+    .Support {
+       
+        padding: 3vw 0 ;
+        margin-top: 2vw !important;
+        padding-bottom: 5vw;
+    
+    
+        border-radius: 2vw !important;
+        .Support-title {
+          
+            font-size: 8vw !important;
+            line-height: inherit !important;
+          
+            margin: 2vw auto !important;
+            color: #FFFFFF;
+        }
+        .Support-title2 {
+            margin: 5vw auto;
+            font-size: 2.5vw !important;
+            line-height: inherit !important;
+            font-weight: 700 !important;
+        }
+        .Support-links {
+            display: block !important;
+            margin: 2vw auto !important;
+        }
+        .Support-link {
+            margin: 0 6vw !important;
+            img {
+                width: 30vw !important;
+                height: 30vw !important;
+                
+            
+            }
+            p {
+               
+                font-size: 4.5vw !important;
+                line-height: inherit !important;
+              
+                margin: 1vw auto;
+            }
+        }
+    
     }
 }
