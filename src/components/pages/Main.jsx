@@ -591,12 +591,12 @@ const Main = ({value,value1,setValue ,setValue1,  afn,afn1 ,rt   ,rt1  ,text1, t
         <Btn type={type} text={'EXCHANGE NOW'}/>
       </form>
     
-      <p style={{color:'white'}}>{rt}<br></br></p>
+     {/*  <p style={{color:'white'}}>{rt}<br></br></p>
       <p style={{color:'white'}}>{rt1}<br></br></p>
       <p style={{color:'white'}}>{afn}<br></br></p>
       <p style={{color:'white'}}>{afn1}<br></br></p>
       <p style={{color:'white'}}>{value}<br></br></p>
-      <p style={{color:'white'}}>{value1}<br></br></p> 
+      <p style={{color:'white'}}>{value1}<br></br></p>  */}
          
         <div className="block2">
         <p className='logotext'><span>HOW IT WORKS</span></p>
