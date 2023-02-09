@@ -2384,6 +2384,9 @@ color: #FFFFFF;
             z-index: 9200 !important;
     }
     .Myorder1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
         text-transform: none !important;
         font-size: 22px !important;
         border: none !important;
@@ -2396,7 +2399,7 @@ color: #FFFFFF;
         border-radius: 60px;
         cursor: pointer;
         height: 60px;
-        width: 300px;
+        width: 200px;
         color: white;
         line-height: 27px;
         letter-spacing: 0.03em;
