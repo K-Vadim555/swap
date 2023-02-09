@@ -18,6 +18,8 @@ import copy from '../../../img/Group 603.svg'
 import { ButtonBase, Divider } from '@mui/material';
 import Qr from '../cc/CoinPrice';
 import SwipeableTemporaryDrawer from '../CC2';
+import MenuIcon from '@mui/icons-material/Menu';
+import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 
 export default function Post({ value , value1, afn1 , afn ,sum,rt1, rt,index, sum1, posts,  setPosts, post ,count  }) {
 
@@ -117,6 +119,46 @@ export default function Post({ value , value1, afn1 , afn ,sum,rt1, rt,index, su
        setSeconds(60) 
     }
   }, [ seconds, timerActive ]); */
+  const [state, setState] = React.useState({
+    
+    right: false,
+  });
+
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (
+      event &&
+      event.type === 'keydown' &&
+      (event.key === 'Tab' || event.key === 'Shift')
+    ) {
+      return;
+    }
+
+    setState({ ...state, [anchor]: open });
+  };
+
+  const list = (anchor) => (
+    <Box
+      className='mob-r'
+      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 'auto' }}
+      role="presentation"
+      onClick={toggleDrawer(anchor, false)}
+      onKeyDown={toggleDrawer(anchor, false)}
+    >
+           <button onClick={toggleDrawer(anchor, false)} className='close-burger'>+</button>
+         <ul className="link-group">
+         <li><Link to='/'>Home</Link></li>
+            <li><Link to='/aboutUs'>About</Link></li>
+            <li><Link to='/FAQ'>FAQ</Link></li>
+            <li><Link to='/Support'>Support</Link></li>
+         </ul>
+         <Link to={'/orders'} className="Myorder">
+            <img  src={person} alt="" />
+            <p >My Orders</p>
+            
+         </Link>
+        
+    </Box>
+  );
     return ( 
          <div key={post.id} className="post">
            
@@ -193,7 +235,22 @@ export default function Post({ value , value1, afn1 , afn ,sum,rt1, rt,index, su
                         <p >My Orders</p>
                         
                     </Button>
-                    <SwipeableTemporaryDrawer/>
+                    <div className='burger1'>
+                        {['right'].map((anchor) => (
+                            <React.Fragment key={anchor}>
+                            <Button onClick={toggleDrawer(anchor, true)}><MenuIcon/></Button>
+                            <SwipeableDrawer
+                                anchor={anchor}
+                                open={state[anchor]}
+                                onClose={toggleDrawer(anchor, false)}
+                                onOpen={toggleDrawer(anchor, true)}
+                            >
+                                {list(anchor)}
+                            </SwipeableDrawer>
+                            </React.Fragment>
+                        ))}
+                    </div>
+                   
                 </div>
               <p className="logotext">Your order <span>#{post.id}</span></p>
               <p className='modal-title2'>Please complete the order within the time indicated below, otherwise it will be cancelled.</p>
