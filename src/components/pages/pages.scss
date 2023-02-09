@@ -3071,6 +3071,10 @@ color: #FFFFFF;
         z-index: 5;
         .burger1 {
             display: block !important;
+            .mob-r {
+                z-index: 9999 !important;
+                opacity: 1 !important;
+            }
         }
         .in-to {
             display: block;
