@@ -23,7 +23,7 @@ import Arrow from '../../img/Arrow 4.svg'
 
 import Search from 'antd/es/transfer/search';
 import Coins from '../componentParts/cc/Coins';
-const Main = ({  afn,afn1 ,rt   ,rt1  ,text1, text2,  setafn , setafn1 ,setrt   ,setrt1  ,settext1,settext2,  coin2Name ,coin1Name , setCoin1Name,setCoin2Name,coin2,coin1, SearchedPosts ,setSearchedPosts , posts , setPosts ,amount1 ,amount2 , currency1 , currency2 , rates,
+const Main = ({value,value1,setValue ,setValue1,  afn,afn1 ,rt   ,rt1  ,text1, text2,  setafn , setafn1 ,setrt   ,setrt1  ,settext1,settext2,  coin2Name ,coin1Name , setCoin1Name,setCoin2Name,coin2,coin1, SearchedPosts ,setSearchedPosts , posts , setPosts ,amount1 ,amount2 , currency1 , currency2 , rates,
   setAmount1,setAmount2,setCurrency1 , setCurrency2 , setRates
 }) => {
 
@@ -291,8 +291,7 @@ const Main = ({  afn,afn1 ,rt   ,rt1  ,text1, text2,  setafn , setafn1 ,setrt   
       })
     
       let sum = rt*text1/rt1
-      let [value, setValue] = useState('')
-      let [value1, setValue1] = useState('')
+      
       const onChange = (event) => {
         setValue(event.target.value);
       };
@@ -592,12 +591,12 @@ const Main = ({  afn,afn1 ,rt   ,rt1  ,text1, text2,  setafn , setafn1 ,setrt   
         <Btn type={type} text={'EXCHANGE NOW'}/>
       </form>
     
-     {/*  <p style={{color:'white'}}>{rt}<br></br></p>
+      <p style={{color:'white'}}>{rt}<br></br></p>
       <p style={{color:'white'}}>{rt1}<br></br></p>
       <p style={{color:'white'}}>{afn}<br></br></p>
       <p style={{color:'white'}}>{afn1}<br></br></p>
       <p style={{color:'white'}}>{value}<br></br></p>
-      <p style={{color:'white'}}>{value1}<br></br></p> */}
+      <p style={{color:'white'}}>{value1}<br></br></p> 
          
         <div className="block2">
         <p className='logotext'><span>HOW IT WORKS</span></p>
@@ -708,11 +707,11 @@ const Main = ({  afn,afn1 ,rt   ,rt1  ,text1, text2,  setafn , setafn1 ,setrt   
           <p>XRP</p>
           </div>
      
-    {/* {posts.map((post , index) => {
+   {/*  {posts.map((post , index) => {
       return (
         <Post 
-          value={value}
-          value1={value1}
+          value={ <p style={{color:'white'}}>{value}<br></br></p>}
+          value1={ <p style={{color:'white'}}>{value1}<br></br></p>}
           afn={afn}
           sum={sum}
           index={index}
@@ -722,7 +721,7 @@ const Main = ({  afn,afn1 ,rt   ,rt1  ,text1, text2,  setafn , setafn1 ,setrt   
           post={post} 
         />
       )
-    })} */}
+    })}  */}
   </div>
          </div>
      {/**

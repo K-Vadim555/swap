@@ -21,7 +21,7 @@ import SwipeableTemporaryDrawer from '../CC2';
 import MenuIcon from '@mui/icons-material/Menu';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 
-export default function Post({ value , value1, afn1 , afn ,sum,rt1, rt,index, sum1, posts,  setPosts, post ,count  }) {
+export default function Post({setValue, setValue1, value , value1, afn1 , afn ,sum,rt1, rt,index, sum1, posts,  setPosts, post ,count  }) {
 
     let removePostById = (posts, setPosts, id) => {
         let arr = posts.filter((post) => post.id !== id)
@@ -283,7 +283,7 @@ export default function Post({ value , value1, afn1 , afn ,sum,rt1, rt,index, su
                                 navigator.clipboard.writeText(post.title);
                                 }}
                             >
-                                <img src={copy} alt="" />{post.title}
+                                <img src={copy} alt="" /><span>{post.title}</span> {value || 'wdcwdw'}
                         </button>
                         <p className="adress-p">To the address:</p>
                         <button style={{cursor:'pointer'}} className='copy-btn'
@@ -296,6 +296,8 @@ export default function Post({ value , value1, afn1 , afn ,sum,rt1, rt,index, su
                         </button>
                          <Qr value={post.v} />
                     </div>
+                   
+                  
                     <div className="to">
                         <p className='title'>You RECEIVE</p>
                         <Divider color='#B5B5B5'/>
@@ -304,7 +306,7 @@ export default function Post({ value , value1, afn1 , afn ,sum,rt1, rt,index, su
                                 navigator.clipboard.writeText(post.adress);
                                 }}
                             >
-                              {post.adress} <img src={copy} alt="" />
+                                {value1 || 'wdcwdw'}<span>{post.adress}</span> <img src={copy} alt="" />
                              
                         </button>
                         <p className="adress-p">To the address:</p>

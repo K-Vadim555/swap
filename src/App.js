@@ -137,6 +137,8 @@ function App() {
 
       let [min, setmin] = useState(30)
      
+      let [value, setValue] = useState('')
+      let [value1, setValue1] = useState('')
   return (
     
     <BrowserRouter>`
@@ -148,6 +150,10 @@ function App() {
     <Routes>
      
         <Route path={"/"} element={<Main 
+         value={value}
+         value1={value1}
+         setValue={setValue}
+         setValue1={setValue1}
          afn  ={afn}
          afn1 ={afn1} 
          rt   ={rt}
@@ -192,13 +198,16 @@ function App() {
         {posts.map((post ) => {
         return (
           <Post
-          
-          setmin={setmin}
-        min={min}
-        key={post.id}
-        posts={posts} 
-        setPosts={setPosts} 
-        post={post} 
+            value={value}
+            value1={value1}
+            setValue={setValue}
+            setValue1={setValue1}
+            setmin={setmin}
+            min={min}
+            key={post.id}
+            posts={posts} 
+            setPosts={setPosts} 
+            post={post} 
             />
         )
           })}

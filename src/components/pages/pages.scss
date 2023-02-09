@@ -284,6 +284,10 @@
                     height: 20px;
                     margin: 0 10px;
                 }
+                span {
+                    margin: 0 10px;
+                }
+
             }
             .copy-btn1 {
                 margin-bottom: 40px;
@@ -2114,6 +2118,9 @@ color: #FFFFFF;
                         height: 2vw;
                         margin: 0 .5vw;
                     }
+                    span {
+                        margin: 0 .5vw !important;
+                    }
                 }
                 .copy-btn1 {
                     margin-bottom: 3vw;
@@ -3130,7 +3137,9 @@ color: #FFFFFF;
                     font-size: 4vw !important;
                    
                     margin: 2vw 0;
-    
+                    span {
+                        margin:0 2vw !important;
+                    }
                     img {
                         width: 8vw !important;
                         height: 8vw !important;
