@@ -151,7 +151,7 @@ export default function Post({ value , value1, afn1 , afn ,sum,rt1, rt,index, su
             <li><Link to='/FAQ'>FAQ</Link></li>
             <li><Link to='/Support'>Support</Link></li>
          </ul>
-         <button onClick={toggleDrawer(anchor, false)} className="Myorder1">
+         <button onClick={toggleDrawer(anchor, false)} className="Myorder1 Myorders">
             <img  src={person} alt="" />
             My Orders
             
