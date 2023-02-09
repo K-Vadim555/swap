@@ -3,9 +3,7 @@
     .seconds1 {
         display: none;
     }
-    .post .burger {
-        display: none;
-    }
+   
 }
 .postlist {
     width: 80% !important;
@@ -221,6 +219,9 @@
 }
 .modal {
     z-index: 5;
+    .post .burger {
+        display: none !important;
+    }
     .in-to {
         display: flex;
         width: 100%;
@@ -3068,6 +3069,9 @@ color: #FFFFFF;
     }
     .modal {
         z-index: 5;
+        .post .burger {
+            display: block !important;
+        }
         .in-to {
             display: block;
             width: 100%;
