@@ -3,6 +3,9 @@
     .seconds1 {
         display: none;
     }
+    .burger {
+        display: none;
+    }
 }
 .postlist {
     width: 80% !important;
@@ -1871,6 +1874,7 @@ color: #FFFFFF;
                     width: 100% !important;
                     flex-direction: inherit !important;
                     justify-content: space-around !important;
+                    
                 }
         }
     }
@@ -2843,6 +2847,9 @@ color: #FFFFFF;
                 }
                 .postlist {
                     display: block !important;
+                    .burger {
+                        display: block !important;
+                    }
                 }
         }
     }
