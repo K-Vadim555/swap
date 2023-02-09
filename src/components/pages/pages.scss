@@ -2379,7 +2379,9 @@ color: #FFFFFF;
     }
     .bgg {
         max-height: 140vw !important;
-    }
+    }.css-y28f86 {
+            z-index: 9200 !important;
+        }
     .mob {
         .burger {
             display: flex !important;
@@ -3069,9 +3071,7 @@ color: #FFFFFF;
     }
     .modal {
         z-index: 5;
-        .css-y28f86 {
-            z-index: 9200 !important;
-        }
+        
         .burger1 {
             display: block !important;
             .mob-r {
