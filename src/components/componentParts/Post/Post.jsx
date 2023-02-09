@@ -91,12 +91,12 @@ export default function Post({ value , value1, afn1 , afn ,sum,rt1, rt,index, su
   }, []); */
   useEffect(() => {
     if ( seconds !== 0 && min > 0) {
-        setTimeout(setSeconds, 100, seconds - 1)
+        setTimeout(setSeconds, 1000, seconds - 1)
     }
   }, [seconds ]);
   useEffect(() => {
     if ( seconds == 0 && min > 0) {
-        setTimeout(setmin, 100, min - 1)
+        setTimeout(setmin, 1000, min - 1)
         setSeconds(59)
     }
   }, [ seconds]);
