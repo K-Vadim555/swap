@@ -2557,6 +2557,9 @@ color: #FFFFFF;
             width: 90% !important;
            
             gap: 1vw;
+            .input-adress::placeholder {
+                font-size: 3.5vw !important;
+            }
             .pf {
                 display: block;
             }

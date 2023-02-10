@@ -15,6 +15,7 @@ function Form({
      
       
         <input
+        placeholder="Your Ethereum adress"
           type="text"
           value={address}
           onChange={changeAddress}
