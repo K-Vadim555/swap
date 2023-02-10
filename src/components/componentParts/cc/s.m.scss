@@ -102,10 +102,6 @@
     width: 150px;
     height: 150px;
     margin: 0 auto;
-    
-   
-   
-    
 }
  @media (max-width:1440px) {
     .Form {
@@ -173,6 +169,12 @@
                 color: #ef233c;
             }
         }
+    }
+    .Qr {
+        display: flex;
+        width: 15vw !important;
+        height: 15vw !important;
+        margin: 0 auto;
     }
  }
  @media (max-width:480px) {
