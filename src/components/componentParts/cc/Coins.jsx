@@ -18,7 +18,7 @@ function Coins({ invalidAddress,setInvalidAddress, status , setstatus}) {
     setstatus('succes')
   }
   else{
-    setstatus('Please,write your ethirium address')
+    setstatus('Please,write Your Ethereum adress')
   }
   const changeAddress = (e) => {
     let address = e.target.value;
