@@ -8,13 +8,18 @@ import  "../../componentParts/cc/s.m.scss";
 import Form from "./Coin";
 import Qr from "./CoinPrice";
 
-function Coins({status , setstatus}) {
+function Coins({ invalidAddress,setInvalidAddress, status , setstatus}) {
   const [network, setNetwork] = useState("eth");
   const [address, setAddress] = useState(
     ""
   );
-  const [invalidAddress, setInvalidAddress] = useState(false);
-
+ 
+  if (invalidAddress == false) {
+    setstatus('succes')
+  }
+  else{
+    setstatus('Please,write your ethirium address')
+  }
   const changeAddress = (e) => {
     let address = e.target.value;
     let isValidAddress = WAValidator.validate(address, network);

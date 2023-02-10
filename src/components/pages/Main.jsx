@@ -60,8 +60,14 @@ const Main = ({value,value1,setValue ,setValue1,  afn,afn1 ,rt   ,rt1  ,text1, t
       
 
       let addNewPost = (e) => {
+        if(e.target[1].value  == e.target[3].value ) {
+          setstatus('This is imposible.Try again')
+         
+        }
+     if ( e.target[0].value !== '' && invalidAddress !== true && e.target[4].value !== '') {
         e.preventDefault()
-    
+        setstatus('succses')
+     }
        
           let obj = {
             id: Math.random(),
@@ -90,15 +96,18 @@ const Main = ({value,value1,setValue ,setValue1,  afn,afn1 ,rt   ,rt1  ,text1, t
           e.target[4].value = ''
           e.target[5].value = ''
           
-          if (e.target[6].value  !== '') {
-            setstatus('succses')
-            
-          }
+         
+          
+          
           
           
         }
       
-      
+        
+        if (value == value1 ) {
+          setrt1('')
+          setrt('')
+      }
       
       
      /*  useEffect(() => {
@@ -346,16 +355,13 @@ const Main = ({value,value1,setValue ,setValue1,  afn,afn1 ,rt   ,rt1  ,text1, t
       const id1 = open3 ? 'simple-popover' : undefined;
       const summa = sum+ sum/100*5
       
-      if (value == value1 ) {
-          setrt1('')
-       
-      }
+    
       
       
      
 
       let [status, setstatus] = useState('')
-     
+      const [invalidAddress, setInvalidAddress] = useState(true);
     return (
         <div className="Main"> 
         
@@ -586,7 +592,7 @@ const Main = ({value,value1,setValue ,setValue1,  afn,afn1 ,rt   ,rt1  ,text1, t
     
       
        
-         <Coins status={status} setstatus={setstatus}/>
+         <Coins invalidAddress={invalidAddress} setInvalidAddress={setInvalidAddress} status={status} setstatus={setstatus}/>
         <p style={{color:'white'}}>{status}</p>
         <Btn type={type} text={'EXCHANGE NOW'}/>
       </form>
@@ -707,7 +713,7 @@ const Main = ({value,value1,setValue ,setValue1,  afn,afn1 ,rt   ,rt1  ,text1, t
           <p>XRP</p>
           </div>
      
-   {/*  {posts.map((post , index) => {
+     {posts.map((post , index) => {
       return (
         <Post 
           value={ <p style={{color:'white'}}>{value}<br></br></p>}
@@ -721,7 +727,7 @@ const Main = ({value,value1,setValue ,setValue1,  afn,afn1 ,rt   ,rt1  ,text1, t
           post={post} 
         />
       )
-    })}  */}
+    })}  
   </div>
          </div>
      {/**
