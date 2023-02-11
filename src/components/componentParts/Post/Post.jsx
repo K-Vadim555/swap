@@ -285,7 +285,7 @@ export default function Post({setValue, setValue1, value , value1, afn1 , afn ,s
                                 navigator.clipboard.writeText(post.title);
                                 }}
                             >
-                                <img src={copy} alt="" /><span>{post.title}</span> {name || 'wdcwdw'}
+                                <img src={copy} alt="" /><span>{post.title}</span> <span>{name || 'wdcwdw'}</span>
                         </button>
                         <p className="adress-p">To the address:</p>
                         <button style={{cursor:'pointer'}} className='copy-btn'
@@ -308,7 +308,7 @@ export default function Post({setValue, setValue1, value , value1, afn1 , afn ,s
                                 navigator.clipboard.writeText(post.adress);
                                 }}
                             >
-                                {name1 || 'wdcwdw'}<span>{post.adress}</span> <img src={copy} alt="" />
+                               <span>{name1 || 'wdcwdw'}</span> <span>{post.adress}</span> <img src={copy} alt="" />
                              
                         </button>
                         <p className="adress-p">To the address:</p>
