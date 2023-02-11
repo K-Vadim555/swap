@@ -293,7 +293,7 @@ export default function Post({setValue, setValue1, value , value1, afn1 , afn ,s
                                 navigator.clipboard.writeText(post.v);
                                 }}
                             >
-                              <span>{post.v .slice(0,10)+ '...'}</span> <img src={copy} alt="" />
+                              <span>{post.v .slice(0,20)+ '...'}</span> <img src={copy} alt="" />
                              
                         </button>
                          <Qr value={post.v} />
@@ -317,7 +317,7 @@ export default function Post({setValue, setValue1, value , value1, afn1 , afn ,s
                                 navigator.clipboard.writeText(post.v);
                                 }}
                             >
-                              <span>{post.v .slice(0,10)+ '...' }</span> <img src={copy} alt="" />
+                              <span>{post.v .slice(0,20)+ '...' }</span> <img src={copy} alt="" />
                              
                         </button>
                         <p className='ex'>The exchange rate will be fixed after receiving 1 network confirmations.</p>
