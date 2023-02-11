@@ -278,7 +278,12 @@
                 align-items: center;
                 color: #FFFFFF;
                 margin: 10px 0;
-
+                .span1 {
+                    display: flex !important;
+                }
+                .span2 {
+                    display: none !important;
+                }
                 img {
                     width: 20px;
                     height: 20px;
@@ -3137,6 +3142,12 @@ color: #FFFFFF;
                
                 .copy-btn {
                    
+                    .span1 {
+                        display: none !important;
+                    }
+                    .span2 {
+                        display: flex !important;
+                    }
                    span {
                     font-size: 4vw !important;
                    } 

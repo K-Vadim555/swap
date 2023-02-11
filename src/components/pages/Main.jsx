@@ -58,7 +58,7 @@ const Main = ({value,value1,setValue ,setValue1,  afn,afn1 ,rt   ,rt1  ,text1, t
       }, [ searchQuery, sortedPosts])
      */
       
-
+      let [type, settype] = useState('submit')
       let addNewPost = (e) => {
         if(e.target[1].value  == e.target[3].value ) {
           setstatus('This is imposible.Try again')
@@ -338,7 +338,7 @@ const Main = ({value,value1,setValue ,setValue1,  afn,afn1 ,rt   ,rt1  ,text1, t
       const [open1, setOpen1] = React.useState(false);
       const [anchorEl, setAnchorEl] = React.useState(null);
       const [anchorEl1, setAnchorEl1] = React.useState(null);
-      let [type, settype] = useState('submit')
+      
 
       const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
