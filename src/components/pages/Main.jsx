@@ -713,7 +713,7 @@ const Main = ({value,value1,setValue ,setValue1,  afn,afn1 ,rt   ,rt1  ,text1, t
           <p>XRP</p>
           </div>
      
-     {posts.map((post , index) => {
+     {/* {posts.map((post , index) => {
       return (
         <Post 
           value={ <p style={{color:'white'}}>{value}<br></br></p>}
@@ -727,7 +727,7 @@ const Main = ({value,value1,setValue ,setValue1,  afn,afn1 ,rt   ,rt1  ,text1, t
           post={post} 
         />
       )
-    })}  
+    })}   */}
   </div>
          </div>
      {/**
